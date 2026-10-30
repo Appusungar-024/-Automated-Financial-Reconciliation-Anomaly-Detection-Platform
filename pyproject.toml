@@ -1,0 +1,16 @@
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q -ra"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::FutureWarning",
+]
+
+[tool.coverage.run]
+source = ["recon"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true

@@ -1,0 +1,38 @@
+{
+  "total_transactions": 3000,
+  "seed": 42,
+  "end_date": "2026-10-28",
+  "days": 90,
+  "excel_sources": [
+    "BANK",
+    "ERP"
+  ],
+  "junk_rate": 0.004,
+  "files": {
+    "BANK": {
+      "file": "bank.xlsx",
+      "rows": 2529,
+      "format": "xlsx",
+      "junk_rows": 10
+    },
+    "LEDGER": {
+      "file": "ledger.csv",
+      "rows": 2260,
+      "format": "csv",
+      "junk_rows": 9
+    },
+    "PAYMENT_GATEWAY": {
+      "file": "payment_gateway.csv",
+      "rows": 744,
+      "format": "csv",
+      "junk_rows": 3
+    },
+    "ERP": {
+      "file": "erp.xlsx",
+      "rows": 443,
+      "format": "xlsx",
+      "junk_rows": 2
+    }
+  },
+  "true_transactions": 3009
+}
